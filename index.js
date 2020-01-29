@@ -1,18 +1,27 @@
-// Code your solutions in this file
-function writeCards(arr,event){
-  let msg=[];
-  for(let i=0;i<arr.length;i++){
-    msg[i]=(`Thank you, ${arr[i]}, for the wonderful ${event} gift!`);
- console.log()
-  }
-   return msg;
-}
-writeCards(["Ada", "Brendan", "Ali"], "birthday");
-
-function countdown (num){
-  while (num >= 0){
-   console.log(num --);
+const gifts = ['Lisa', 'Kaitlin', 'Jan'];
+ 
+function writeCards(gifts) {
+  let i = 0; // the initialization moved OUTSIDE the body of the loop!
+  while (i < gifts.length) {
+    console.log();
+    gifts[i]=`Thank you, ${gifts[i]}, for the wonderful surprise gift!`;
+    i++; // the iteration moves INSIDE the body of the loop!
   }
  
+  return gifts;
 }
-countdown(10);
+ 
+writeCards(gifts);
+
+
+function countdown(number) {
+ for(let i =number;i>=0;i--){
+    console.log(number);  
+    number-=1;
+ }
+ 
+  }
+
+
+
+countdown(5);
