@@ -1,18 +1,19 @@
 // Code your solutions in this file
-function writeCards(array,eventname){
-  let thankYou=[];
-  for(let i=0;i<array.length;i++){
-    thankYou.push(`Thank you, ${array[i]}, for the wonderful ${eventname} gift!`)
-  }
-  return thankYou;
-}
-
-function countdown(count){
-  while(count>=0){
-    console.log(count);
-    count=count-1;
+function writeCards(arr, event_name){
+  const msgs = [];
+  
+  for (let i=0; i < arr.length; i++){
+    msgs.push(`Thank you, ${arr[i]}, for the wonderful ${event_name} gift!`)
   }
   
+  return msgs;
 }
-const names = ["ahmed", "noor", "muna"];
-console.log(writeCards(names,"birthday"));
+
+function countdown(input){
+  while (input>=0) {
+    console.log(input);
+    input--;
+  }
+}
+
+writeCards(["Lisa", "Kaitlin", "Jan"], "surpsrise");
