@@ -14,7 +14,7 @@ function writeCards(gifts) {
 writeCards(gifts);
 
 
-function countdown(number) {
+function countDown(number) {
  for(let i =number;i>=0;i--){
     console.log(number);  
     number-=1;
@@ -24,4 +24,4 @@ function countdown(number) {
 
 
 
-countdown(5);
+countDown(5);
